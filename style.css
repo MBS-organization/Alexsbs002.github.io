@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
 body{
-    background-color: azure;
-    
+    background-color:white
 }
 
 .header-top-nav{
@@ -15,13 +14,17 @@ body{
     border: none;
     margin: 0px 15% 0 15%;
 }
+
 .brand-image{
     
-    padding-top: 5px;
+    margin-top: 8px;
+    border-radius: 10px;
+    background-color: white;
     border: none;
     width: 150px;
     text-align: center;
     float: left;
+    font-size: 11px;
     
 }
 .search{
@@ -37,15 +40,16 @@ body{
     height: 40px;
     float: left;
     width: 320px;
-    border: solid 1px;
+    
+    border: solid 1px darkorange;
     border-radius: 5px;
     padding-left: 10px;
     font-size: 14px;
 }
 .kw-button-kw-button--green{
-    background-color: green;
+    background-color: darkorange;
     border-radius: 5px;
-    width: 60px;
+    width: 80px;
     height: 40px;
     float: left;
     font-size: 14px;
@@ -56,49 +60,58 @@ body{
 }
 .online-count-js-online-count{
     font-family:cursive;
-    border: none;
-    width: 300px;
-    height: 65px;
+    border: solid 1px darkorange;
+    background-color: white;
+    border-radius: 20px;
+    width: 17%;
+    height: 60%;
     float: left;
-    text-justify: auto;
-    text-align: justify-all;
-    padding-top: 10px;
+    margin-top: 10px;
+    text-align: center;
+    
 }
 .online-count-item{
     padding-top: 2px;
     
 }
 .headeright{
+    
+   
     float: right;
-    border: none;
+    border-radius: 15px;
     width: 30%;
     height: 65px;
 }
 nav{border:none; 
+    
     font-family: 'Playfair Display SC', serif;
     width: 80%;
     height: 40px;
     position: absolute;
-    left: 10%;
+    left: 15%;
     
 }
 
 nav ul li{
+    height: 30px;
+   
+    background-color: white;
     width: 12%;
-    margin: 5px 10px 0px 20px;
+    padding-top: 6px;
+    margin: 5px 10px 0px 5px;
     float: left;
-    border: solid 1px;
+    border: solid 1px darkorange;
     border-radius: 5px;
     text-align: center;
     font-size 25px;
 }
 .headeright ul li{
-    
+    background-color: white;
     width: 30%;
     height: 40px;
     margin: 10px 5px 0px 5px;
     float: right;
-    border: solid 1px;
+    border: solid 1px darkorange;
     border-radius: 5px;
    
     text-align: center;
