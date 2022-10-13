@@ -141,6 +141,35 @@ nav ul li{
     margin: 0 10% 0 10%;
     
 }
+.market-search{
+    margin: 12% 0% 0% 13%;
+    
+    text-align: center;
+    
+    border: none;
+    height: 13%;
+    width: 40%;
+    padding-top: 10px;
+    float: left;
+}
+.banner-search-form-control{
+    height: 100%;
+    float: left;
+    width: 80%;
+    
+    border: solid 1px darkorange;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.market-kw-button-kw-button--green{
+    background-color: darkorange;
+    border-radius: 5px;
+    width: 20%;
+    height: 100%;
+    float: left;
+    font-size: 20px;
+}
 
 .rubrics{
     background-color:azure;
@@ -158,4 +187,23 @@ nav ul li{
     border:solid 2px;
     margin: 0 10% 0 10%;
     
+}
+
+.rubrics-title{
+    color: white;
+    border:none;
+    margin: 1% 0% 0% 13%;
+    font-size: 30px;
+    font-weight: bold;
+}
+.rubrics-content{
+    float: left;
+}
+.rubrics__items{
+    margin: 5% 0 0 5%;
+}
+.rubrics__item{
+    float: left;
+    margin: 3% 0 0 2%;
+
 }
