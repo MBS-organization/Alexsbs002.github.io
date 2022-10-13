@@ -141,8 +141,15 @@ nav ul li{
     margin: 0 10% 0 10%;
     
 }
+.banner-title{
+    border:none;
+    margin: 9% 0% 0% 13%;
+    float: bottom;
+    font-size: 30px;
+    font-weight: bold;
+}
 .market-search{
-    margin: 12% 0% 0% 13%;
+    margin: 1% 0% 0% 13%;
     
     text-align: center;
     
@@ -190,9 +197,9 @@ nav ul li{
 }
 
 .rubrics-title{
-    color: white;
+    
     border:none;
-    margin: 1% 0% 0% 13%;
+    margin: 9% 0% 0% 13%;
     font-size: 30px;
     font-weight: bold;
 }
@@ -200,7 +207,7 @@ nav ul li{
     float: left;
 }
 .rubrics__items{
-    margin: 5% 0 0 5%;
+    margin: 0 0 0 5%;
 }
 .rubrics__item{
     float: left;
