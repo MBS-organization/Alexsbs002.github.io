@@ -1,19 +1,150 @@
 @import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
+/*
+
+.loaderArea {
+  background: linear-gradient(90deg, #084d77 10%, #24d2e5 90%);
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom:0;
+  z-index: 100000;
+}
+.loader {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  top: 50%;
+  margin-top: -20px;
+}
+ 
+.loader:before,
+.loader:after {
+  content: "";
+  height: 40px;
+  width: 40px;
+  border: 8px solid rgba(255,255,255,.5);
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+}
+ 
+.loader:before {
+  animation: animate 2s infinite linear;
+}
+ 
+@keyframes animate {
+  0% {
+    transform: rotate(0) skew(0);
+  }
+   
+  100% {
+    transform: rotate(180deg) skew(360deg);
+  }
+}
+ 
+ 
+.loader:after {
+  animation: animate2 2s infinite linear;
+}
+ 
+@keyframes animate2 {
+  0% {
+    transform: rotate(0) skew(0);
+  }
+   
+  100% {
+    transform: rotate(-180deg) skew(-360deg);
+  }
+}
+
+<script>
+  $(window).on('load', function () {
+    $preloader = $('.loaderArea'),
+      $loader = $preloader.find('.loader');
+    $loader.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+  });
+</script>
+
+
+Лоадер
+*/
+
+
+@keyframes comming {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;    
+    }    
+}
+
+@keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to{
+        
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+@keyframes titleshiftleft{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+
+@keyframes titleshiftright{
+    from{
+        opacity: 0;
+        margin-right: -1000;
+    }
+    to{
+        
+        opacity: 1;
+        margin-right: 0px;
+    }
+}
+
+
+/*анимации*/
 body{
     background-color:white;
 }
 
 .header-top-nav{
+    
     font-family: 'Arimo', sans-serif;
     width: 100%;
     border: none;
     height: 65px;
+    
+    -webkit-animation: topshift 1s forwards;
+    -o-animation: topshift 1s forwards;
+    animation: topshift 1s forwards; 
+    opacity: 0;
 }
 .header-top{
     height: 65px;
     border: none;
     margin: 0px 15% 0 15%;
 }
+
+/*весь заголовок*/
 
 .brand-image{
     opacity: 0;
@@ -27,6 +158,9 @@ body{
     font-size: 11px;
     
 }
+
+/*изображене бренда*/
+
 .search{
     
     text-align: center;
@@ -54,11 +188,23 @@ body{
     height: 40px;
     float: left;
     font-size: 14px;
-    
-    
-    
-    
+
 }
+
+.kw-button-kw-button--green{
+    transition: all 0.2s;
+    transform:scale(1);
+}
+
+.kw-button-kw-button--green:hover{
+    border: solid 1px darkorange;
+    background: white;
+}
+.kw-button-kw-button--green:active{
+    transform: scale(1.1);
+}
+/*строка поиска*/
+
 .online-count-js-online-count{
     margin: 0 10px 0 0;
     font-family:cursive;
@@ -76,16 +222,39 @@ body{
     padding-top: 2px;
     
 }
+
+/*счетчик*/
+
 .headeright{
-    
-    
-   
     float: right;
     border-radius: 15px;
     width: 30%;
     height: 65px;
 }
-nav{border:none; 
+.headeright ul li{
+    background-color: white;
+    width: 30%;
+    height: 40px;
+    margin: 10px 5px 0px 5px;
+    float: right;
+    border: solid 1px darkorange;
+    border-radius: 5px;
+    text-align: center;
+    padding: 11px;
+    font-size: 16px;
+}
+.headeright ul li{
+    transition: all 0.2s;
+    transform:scale(1);
+}
+.headeright ul li:active{
+    transform: scale(1.1);
+}
+/*регистрация вход*/
+
+
+nav{
+    border:none; 
     margin: 1% 0 0 0;
     font-family: 'Playfair Display SC', serif;
     width: 80%;
@@ -95,9 +264,9 @@ nav{border:none;
     
 }
 
-nav ul li{
+
+.nav-button{
     height: 30px;
-   
     background-color: white;
     width: 12%;
     padding-top: 6px;
@@ -109,37 +278,42 @@ nav ul li{
     font-size: 14px;
     font-weight:bold;
 }
-.headeright ul li{
-    background-color: white;
-    width: 30%;
-    height: 40px;
-    margin: 10px 5px 0px 5px;
-    float: right;
-    border: solid 1px darkorange;
-    border-radius: 5px;
-   
-    text-align: center;
-    padding: 11px;
-    font-size: 16px;
+
+
+.nav-button{
+    transition: all 0.2s;
+    transform:scale(1);
 }
+
+
+.nav-button:active{
+    transform: scale(1.1);
+}
+/*регистрация вход*/
+
 .banner-market{
     background-color:azure;
     margin: 5% 0 0 0;
     border:none;
     width: 100%;
     height: 480px;
-    
+    -webkit-animation: titleshiftleft 1s forwards;
+    -o-animation: titleshiftleft 1s forwards;
+    animation: titleshiftleft 1s forwards;
 
 
     
 }
 .banner-content{
-    ebackground: url(../freelance-birge/multfilm_lyagushka_32117.jpg) 50% 50% ;
+    box-shadow: 2px 2px 10px;
+    
     float: left;
     width: 80%;
     height: 510px;
     border:solid 1px;
     margin: 0 10% 0 10%;
+    
+
     
 }
 .banner-title{
@@ -177,7 +351,24 @@ nav ul li{
     height: 100%;
     float: left;
     font-size: 20px;
+    
 }
+.market-kw-button-kw-button--green{
+    transition: all 0.2s;
+    transform:scale(1);
+}
+
+.market-kw-button-kw-button--green:hover{
+    border: solid 1px darkorange;
+    background: white;
+    
+}
+.market-kw-button-kw-button--green:active{
+    transform: scale(1.1);
+}
+
+
+/*первый банер*/
 
 .rubrics{
     background-color:azure;
@@ -185,10 +376,13 @@ nav ul li{
     border:none;
     width: 100%;
     height: 480px;
+    -webkit-animation: titleshiftleft 1s forwards;
+    -o-animation: titleshiftleft 1s forwards;
+    animation: titleshiftleft 1s forwards;
     
 }
 .rubrics-content{
-    3ebackground: url(../freelance-birge/multfilm_lyagushka-1.jpg) 50% 50% ;
+    box-shadow: 2px 2px 10px;
     float: left;
     width: 80%;
     height: 480px;
@@ -198,7 +392,6 @@ nav ul li{
 }
 
 .rubrics-title{
-    
     border:none;
     margin: 9% 0% 0% 13%;
     font-size: 30px;
@@ -215,3 +408,12 @@ nav ul li{
     margin: 3% 0 0 2%;
 
 }
+.rubrics__item{
+    transition: all 0.2s;
+    transform:scale(1);
+}
+
+.rubrics__item:active{
+    transform: scale(1.1);
+}
+/*рубрики*/
