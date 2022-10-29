@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/fontawesome.css">
     <link rel="stylesheet" href="css/all.css">
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/dropdown.js"></script>
         <script>
           $(window).on('load', function () {
             $preloader = $('.loaderArea'),
@@ -37,19 +38,34 @@
     <title>Фриланс, услуги фрилансеров</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
+     
   
-    <script>['ssite'].forEach(alert);</script>
+    
 <div class="loaderArea">
    <div class="loader"></div>
 </div>
    <header>
-        <div class="header-top-nav">
             <div class="header-top">
+              
+               <div class="dropdown">
+                      <button onclick="myFunction()" class="dropbtn">Menu</button>
+                      <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Профиль</a>
+                        <a href="#">Рубрики</a>
+                        <a href="#">Вход</a>
+                        <a href="#">Регистрация</a>
+                        <a href="#">Фрилансеру</a>
+                        
+                      </div>
+                </div>
+                
                 <div class="brand-image">
-                    <div class="brand-image">
                         <a href="https://kwork.ru/">
                             <svg xmlns="http://www.w3.org/2000/svg" width="110" height="23" fill="none" fill-rule="evenodd">
                                 <path class="svg-logo" d="M19.158 21.912l-8.543-10.595 8.012-9.368H13.32L1.9 16.188v5.723h4.297V15.78l1.575-1.857 6.095 7.99h5.3zm22.907 0L47.8 1.932h-4.828l-3.5 14.427-3.8-14.427h-3.356L28.472 16.36 24.928 1.932h-4.81l5.77 19.963h4.554l3.5-13.712 3.527 13.712h4.588v.017zm16.95.358c6.095 0 10.546-4.31 10.546-10.322s-4.434-10.34-10.546-10.34c-6.078 0-10.512 4.31-10.512 10.322s4.434 10.34 10.512 10.34zm0-3.78c-3.715 0-6.095-2.845-6.095-6.558 0-3.747 2.38-6.558 6.095-6.558s6.13 2.8 6.13 6.558c0 3.713-2.414 6.558-6.13 6.558zm30.132 3.424L84.6 14.315c2.174-.51 4.417-2.402 4.417-5.928 0-3.713-2.568-6.44-6.763-6.44H72.83v19.963h4.297V14.81h3.15l3.955 7.103h4.914zm-7.533-10.85H77.11V5.68h4.503c1.73 0 3.013 1.022 3.013 2.69.017 1.686-1.284 2.69-3.013 2.69zM110 21.912l-8.56-10.595 8.012-9.368h-5.3l-7.122 8.925V1.932h-4.297v19.963h4.297v-6.132l1.575-1.857 6.095 7.99h5.3v.017z" fill="#111"></path>
@@ -58,8 +74,8 @@
                             <div class="logo_subtext">Фриланс маркетплейс
                             </div>
                         </a>
-                    </div>
                 </div>
+                
                 <div class="search">
                     <input name="" type="text" placeholder="Найти услуги" autocomplete="off" spellcheck="false" class="header-search-form-control">
                     <span class="search-button">
@@ -71,7 +87,7 @@
                     <div class="online-count-item">
                         <span><i class="circle-online">
                             
-                        </i>Пользователей онлайн: 2330
+                        </i> <script src="js/realtime.js"></script>
                         </span>
                     </div>
                     <div class="online-count-item">
@@ -91,54 +107,66 @@
                 </div>
 
             </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a class="nav-button">Дизайн</a> </li>
-                <li><a class="nav-button">Разработка и IT</a></li>
-                <li><a class="nav-button">Тексты и переводы</a> </li>
-                <li><a class="nav-button">SEO и трафик</a> </li>
-                <li><a class="nav-button">Соцсети и реклама</a> </li>
-                <li><a class="nav-button">Аудио, видео, съемка</a> </li>
-                <li><a class="nav-button">Бизнес и жизнь</a> </li>
-            </ul>
-        </nav>
-   </header>
-   
-   <div class="banner-market">
-     
-      <div class="banner-content" style="background-image: url('https://avatarko.ru/img/kartinka/33/multfilm_lyagushka_32117.jpg'); ">
-      
-       <div class="banner-title">Здесь вы можете начать поиск исполнителей</div>
+            
+            
         
-         <div class="market-search">
-             <input name="" type="text" placeholder="Найти услуги" autocomplete="off" spellcheck="false" class="banner-search-form-control">
-                    <span class="market-search-button">
-                        <button class="market-kw-button-kw-button--green">Найти</button> 
-                        <div class="ico-search-button"></div>
-                    </span>
-         </div>
+
+        
+   </header>
           
+           <div class="sections">
+            <nav>
+                <ul>
+                    <li><a class="nav-button">Дизайн</a> </li>
+                    <li><a class="nav-button">Разработка и IT</a></li>
+                    <li><a class="nav-button">Тексты и переводы</a> </li>
+                    <li><a class="nav-button">SEO и трафик</a> </li>
+                    <li><a class="nav-button">Соцсети и реклама</a> </li>
+                    <li><a class="nav-button">Аудио, видео, съемка</a> </li>
+                    <li><a class="nav-button">Бизнес и жизнь</a> </li>
+                </ul>
+            </nav>
+            </div>
+            
+
+  
+      <div class="all-content">
+            <div class="banner-market">
+
+              <div class="banner-content" style="background-image: url('https://avatarko.ru/img/kartinka/33/multfilm_lyagushka_32117.jpg'); ">
+
+               <div class="banner-title">Здесь вы можете начать поиск исполнителей</div>
+
+                 <div class="market-search">
+                     <input name="" type="text" placeholder="Найти услуги" autocomplete="off" spellcheck="false" class="banner-search-form-control">
+                            <span class="market-search-button">
+                                <button class="market-kw-button-kw-button--green">Найти</button> 
+                                <div class="ico-search-button"></div>
+                            </span>
+                 </div>
+
+              </div>
+
+           </div>
+
+           <div class="rubrics">
+               <div class="rubrics-content" style="background-image: url('https://avatarko.ru/img/kartinka/33/multfilm_lyagushka_32117.jpg');">
+
+                  <div class="rubrics-title">Выберите рубрику, чтобы начать</div>
+                  <div class="rubrics__items">
+                     <div class="rubrics__item" ></div>
+
+                      <div class="rubrics__item"><img src="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3/programming_guest_new.jpg" data-src="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3/programming_guest_new.jpg" data-srcset="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3_r/programming_guest_new.jpg 2x" alt="Разработка и IT" width="307" height="211" onerror="imageLoadError(this)" srcset="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3_r/programming_guest_new.jpg 2x"></div>
+
+                       <div class="rubrics__item"><img src="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3/promotion_guest_new.jpg" data-src="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3/promotion_guest_new.jpg" data-srcset="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3_r/promotion_guest_new.jpg 2x" alt="Соцсети и реклама" width="307" height="211" onerror="imageLoadError(this)" srcset="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3_r/promotion_guest_new.jpg 2x"></div>
+
+                        <div class="rubrics__item"><img src="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3/seo_guest_new.jpg" data-src="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3/seo_guest_new.jpg" data-srcset="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3_r/seo_guest_new.jpg 2x" alt="SEO и трафик" width="307" height="211" onerror="imageLoadError(this)" srcset="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3_r/seo_guest_new.jpg 2x"></div>
+
+                   </div>
+               </div>
+               </div>
       </div>
-       
-   </div>
-   
-   <div class="rubrics">
-       <div class="rubrics-content" style="background-image: url('https://avatarko.ru/img/kartinka/33/multfilm_lyagushka_32117.jpg');">
-         
-          <div class="rubrics-title">Выберите рубрику, чтобы начать</div>
-          <div class="rubrics__items">
-             <div class="rubrics__item" ></div>
-             
-              <div class="rubrics__item"><img src="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3/programming_guest_new.jpg" data-src="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3/programming_guest_new.jpg" data-srcset="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3_r/programming_guest_new.jpg 2x" alt="Разработка и IT" width="307" height="211" onerror="imageLoadError(this)" srcset="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3_r/programming_guest_new.jpg 2x"></div>
-              
-               <div class="rubrics__item"><img src="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3/promotion_guest_new.jpg" data-src="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3/promotion_guest_new.jpg" data-srcset="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3_r/promotion_guest_new.jpg 2x" alt="Соцсети и реклама" width="307" height="211" onerror="imageLoadError(this)" srcset="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3_r/promotion_guest_new.jpg 2x"></div>
-               
-                <div class="rubrics__item"><img src="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3/seo_guest_new.jpg" data-src="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3/seo_guest_new.jpg" data-srcset="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3_r/seo_guest_new.jpg 2x" alt="SEO и трафик" width="307" height="211" onerror="imageLoadError(this)" srcset="https://cdn-edge.kwork.ru/files/category/collage/categories_first_level/ru/t3_r/seo_guest_new.jpg 2x"></div>
-                
-       </div>
-       </div>
-       </div>
+
 
 </body>
 
