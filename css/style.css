@@ -123,6 +123,23 @@
 
 /*анимации*/
 
+
+@media (max-width:600px){
+    .online-count-js-online-count{
+        visibility: hidden;
+    }
+    .search{
+        visibility: hidden;
+    }
+    .dropbtn{
+        width: 100%;
+        float: right;
+    }
+}
+
+
+/*media request*/
+
 body{
     background-color:#101010;
     font-family: 'Roboto Slab', serif;
