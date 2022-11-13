@@ -1,9 +1,11 @@
+
 <link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/profile.css">
 <script src="js/dropdown.js"></script>
 
-<header>
+<script src="js/authorization.js"></script>
+
+<link rel="stylesheet" href="css/authorization.css">
+ <header>
             <div class="header-top">
               
                <div class="dropdown">
@@ -60,22 +62,37 @@
 
         
    </header>
+<div class="modal__background">
+    <div class="modal__window">
 
+        <form class="auth-form" name="form-auth" method="post">
 
+            <label class="auth-form__label">
+                <span class="auth-form__placeholder">email</span>
+                <input class="auth-form__input input-email" type="email" name="email" autocomplete="off" required>
+            </label>
 
+            <label class="auth-form__label">
+                <span class="auth-form__placeholder">password</span>
+                <input class="auth-form__input input-password" type="password" name="password" autocomlete="off" required>
+                <div class="auth-form__toggler">
+                    <i class="la la-eye auth-form__icon"></i>
+                    <input type="checkbox" class="auth-form__checkbox password-toggler">
+                </div>
+            </label>
 
+            <div class="auth-form__answer"></div>
 
+            <input class="auth-form__submit" type="submit" value="Login">
+            
+            <div class="auth-form__bottom">
+                <span>Have no account?</span>
+                <a href="#">Create new</a>
+            </div>
+        </form>
+       
+    </div>
 
-
-
- <div class="container">
-  <div class="avatar-flip">
-    <img src="http://media.idownloadblog.com/wp-content/uploads/2012/04/Phil-Schiller-headshot-e1362692403868.jpg" height="150" width="150">
-    <img src="http://i1112.photobucket.com/albums/k497/animalsbeingdicks/abd-3-12-2015.gif~original" height="150" width="150">
-  </div>
-  <h2>John Smith</h2>
-  <h4>HOVER OVER CONTAINER</h4>
-  <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna ip sum dolore.</p>
-  <p>Connec dolore ipsum faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla.</p>
-    
 </div>
+
+<div class="hint"></div>
