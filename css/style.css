@@ -142,6 +142,7 @@
 
 body{
     background-color:#101010;
+    background: url(../img/layer-base.png) no-repeat  ;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -199,7 +200,8 @@ body{
     font-size: 14px;
 }
 .kw-button-kw-button--green{
-    background-color: #3498DB;
+/*    background-color: #3498DB;*/
+    background-color:darkslategray;
     border-radius: 5px;
     width: 80px;
     height: 40px;
@@ -313,7 +315,7 @@ body{
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: #3498DB;
+    background-color: darkslategray;
     height: 40px;
     color: white;
     padding: 0px 16px 0px 16px;
@@ -324,7 +326,7 @@ body{
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
+    background-color: darkslategray;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -334,19 +336,19 @@ body{
     display: inline-block;
     margin: 10px 100px 0px 100px;
     border-radius: 10px;
-    background-color: white;
+    background-color: darkslategray;
     border: none;
     width: 100px;
     text-align: center;
     float: right;
-    font-size: 11px;
+    font-size: 14px;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: darkslategray;
     min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -367,6 +369,7 @@ body{
 .show {display:block;}
 /*список секций*/
 .all-content{
+    
     background-color:#181818;
     margin-left: 5%;
     width: 90%;
@@ -386,7 +389,7 @@ body{
 }
 .banner-content{
     box-shadow: 2px 2px 10px;
-    
+    background: url(../img/layer-base.png);
     float: left;
     width: 80%;
     height: 510px;
@@ -426,7 +429,7 @@ body{
     font-size: 20px;
 }
 .market-kw-button-kw-button--green{
-    background-color: #3498DB;
+    background-color: darkslategray;
     border-radius: 5px;
     width: 20%;
     height: 100%;
@@ -459,7 +462,7 @@ body{
     height: 480px;
 }
 .rubrics-content{
-    
+    background: url(../img/layer-base.png) 0%;
     box-shadow: 2px 2px 10px;
     float: left;
     width: 80%;
